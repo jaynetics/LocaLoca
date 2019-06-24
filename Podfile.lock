@@ -1,0 +1,21 @@
+PODS:
+  - Yams (2.0.0)
+
+DEPENDENCIES:
+  - Yams (from `https://github.com/jpsim/Yams.git`)
+
+EXTERNAL SOURCES:
+  Yams:
+    :git: https://github.com/jpsim/Yams.git
+
+CHECKOUT OPTIONS:
+  Yams:
+    :commit: 0e210c0ef36de544a78db8298236c301520000b3
+    :git: https://github.com/jpsim/Yams.git
+
+SPEC CHECKSUMS:
+  Yams: b9040a5601e7b3a63ff6cfd93b7ee791588b3182
+
+PODFILE CHECKSUM: f9c58a9e3a33b0c4b07a731aab070d80b9b1fbfe
+
+COCOAPODS: 1.7.2

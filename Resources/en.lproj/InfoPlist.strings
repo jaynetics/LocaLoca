@@ -1,0 +1,6 @@
+/*
+Localized versions of Info.plist keys.
+*/
+
+CFBundleGetInfoString = "by Janosch Müller";
+NSHumanReadableCopyright = "by Janosch Müller";

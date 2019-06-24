@@ -1,0 +1,28 @@
+/*
+Localized string resources.
+*/
+
+"root string" = "Root";
+
+"untitled string" = "Untitled";
+
+"remove link confirm string" = "Are you sure you want to remove the reference to \"%@\"?";
+"remove confirm string" = "Are you sure you want to remove \"%@\"?";
+"remove multiple string" = "Are you sure you want to remove these items?";
+
+"ok button title" = "OK";
+"cancel button title" = "Cancel";
+
+"open panel prompt" = "Choose";
+"enter key message" = "Enter a translation key to add to \"%@\"";
+
+"context remove string" = "Remove \"%@\"";
+"context remove string multiple" = "Remove Items";
+
+"context rename string" = "Rename \"%@\"";
+
+"on disk" = "%@ on disk";
+
+"add translation" = "Add Translation";
+"add folder" = "Add Folder";
+"add locale" = "Add Locale";

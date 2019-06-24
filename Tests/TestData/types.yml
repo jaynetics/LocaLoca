@@ -1,0 +1,13 @@
+types:
+  numbers:
+    int: 1
+    float: 2.0
+    float_abrv: 3.
+  strings:
+    astral: 😍😍😍
+    single_quoted: 'hi'
+    double_quoted: "hi"
+  array:
+    - a
+    - b
+    - c
