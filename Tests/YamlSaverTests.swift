@@ -33,10 +33,10 @@ class YamlSaverTests: XCTestCase {
     
     func testArray() {
         let tree = [
-            Node(fullKey: "foo", type: .container, children: [
+            Node(fullKey: "foo", type: .sequence, children: [
                 Node(fullKey: "[23]", translations: ["de": "Hallo"]),
                 Node(fullKey: "[42]", translations: ["de": "Tschüss"]),
-                ], array: true)
+            ])
         ]
         
         let result = YamlSaver.stringFromTree(tree, locale: "de")
@@ -82,15 +82,5 @@ class YamlSaverTests: XCTestCase {
           float_like_str: '2.0'
           int_like_str: '1'\n
         """)
-    }
-}
-
-extension Node {
-    convenience init(fullKey: String, type: NodeType = .document, children: [Node] = [], translations: [String: String]? = nil, array: Bool = false) {
-        self.init(fullKey: fullKey)
-        self.type = type
-        self.children = children
-        self.translations = translations
-        self.isSequenceContainer = array
     }
 }

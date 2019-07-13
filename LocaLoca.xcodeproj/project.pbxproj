@@ -31,15 +31,9 @@
 		828055E322D282360053DD85 /* YamlLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828055E222D282360053DD85 /* YamlLoaderTests.swift */; };
 		828055EC22D286B40053DD85 /* YamlLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820F576622C950130070E7DF /* YamlLoader.swift */; };
 		828055ED22D2870F0053DD85 /* Warning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820F576822C950A20070E7DF /* Warning.swift */; };
-		828055F122D288B60053DD85 /* simple_en.yml in Resources */ = {isa = PBXBuildFile; fileRef = 828055EF22D288B60053DD85 /* simple_en.yml */; };
-		828055F222D288B60053DD85 /* simple_de.yml in Resources */ = {isa = PBXBuildFile; fileRef = 828055F022D288B60053DD85 /* simple_de.yml */; };
-		828055F422D3C16E0053DD85 /* wrong_filename.yml in Resources */ = {isa = PBXBuildFile; fileRef = 828055F322D3C16E0053DD85 /* wrong_filename.yml */; };
 		828055F622D3C3130053DD85 /* WarningStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828055F522D3C3130053DD85 /* WarningStub.swift */; };
 		828055F822D3C7880053DD85 /* DialogStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828055F722D3C7880053DD85 /* DialogStub.swift */; };
 		828055F922D3C7DD0053DD85 /* Dialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827CAEBA22CD27EA002D4DAC /* Dialog.swift */; };
-		828055FB22D3CCE20053DD85 /* nested_de.yml in Resources */ = {isa = PBXBuildFile; fileRef = 828055FA22D3CCE20053DD85 /* nested_de.yml */; };
-		828055FD22D3CD100053DD85 /* nested_en.yml in Resources */ = {isa = PBXBuildFile; fileRef = 828055FC22D3CD100053DD85 /* nested_en.yml */; };
-		828055FF22D3CE120053DD85 /* types.yml in Resources */ = {isa = PBXBuildFile; fileRef = 828055FE22D3CE120053DD85 /* types.yml */; };
 		8280560522D4C35D0053DD85 /* FileManagerStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8280560422D4C35D0053DD85 /* FileManagerStub.swift */; };
 		8280560622D4C4350053DD85 /* YamlFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820F576222C946950070E7DF /* YamlFinder.swift */; };
 		8280560822D4C7450053DD85 /* YamlFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8280560722D4C7450053DD85 /* YamlFinderTests.swift */; };
@@ -51,6 +45,12 @@
 		8280561222D51B550053DD85 /* NodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8280561122D51B550053DD85 /* NodeTests.swift */; };
 		8281095322C159BF00165A35 /* ValueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8281095222C159BF00165A35 /* ValueViewController.swift */; };
 		8281095522C15F7F00165A35 /* ValueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8281095422C15F7F00165A35 /* ValueCell.swift */; };
+		8290356422DBAB6700EA659A /* deviant_ok in Resources */ = {isa = PBXBuildFile; fileRef = 8290355F22DBAB6700EA659A /* deviant_ok */; };
+		8290356522DBAB6700EA659A /* types in Resources */ = {isa = PBXBuildFile; fileRef = 8290356022DBAB6700EA659A /* types */; };
+		8290356622DBAB6700EA659A /* nested in Resources */ = {isa = PBXBuildFile; fileRef = 8290356122DBAB6700EA659A /* nested */; };
+		8290356722DBAB6700EA659A /* filename_mismatch in Resources */ = {isa = PBXBuildFile; fileRef = 8290356222DBAB6700EA659A /* filename_mismatch */; };
+		8290356822DBAB6700EA659A /* simple in Resources */ = {isa = PBXBuildFile; fileRef = 8290356322DBAB6700EA659A /* simple */; };
+		8290356A22DBB32B00EA659A /* deviant_bad in Resources */ = {isa = PBXBuildFile; fileRef = 8290356922DBB32A00EA659A /* deviant_bad */; };
 		829ACFB722CA84BB00F64289 /* YamlKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829ACFB622CA84BB00F64289 /* YamlKey.swift */; };
 		82ABEFCE22D0D6F8005801FE /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82ABEFCD22D0D6F8005801FE /* Search.swift */; };
 		B6A473C02E1C538AD115031F /* (null) in Frameworks */ = {isa = PBXBuildFile; };
@@ -104,14 +104,8 @@
 		828055E022D282360053DD85 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		828055E222D282360053DD85 /* YamlLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YamlLoaderTests.swift; sourceTree = "<group>"; };
 		828055E422D282360053DD85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		828055EF22D288B60053DD85 /* simple_en.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = simple_en.yml; sourceTree = "<group>"; };
-		828055F022D288B60053DD85 /* simple_de.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = simple_de.yml; sourceTree = "<group>"; };
-		828055F322D3C16E0053DD85 /* wrong_filename.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = wrong_filename.yml; sourceTree = "<group>"; };
 		828055F522D3C3130053DD85 /* WarningStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningStub.swift; sourceTree = "<group>"; };
 		828055F722D3C7880053DD85 /* DialogStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogStub.swift; sourceTree = "<group>"; };
-		828055FA22D3CCE20053DD85 /* nested_de.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = nested_de.yml; sourceTree = "<group>"; };
-		828055FC22D3CD100053DD85 /* nested_en.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = nested_en.yml; sourceTree = "<group>"; };
-		828055FE22D3CE120053DD85 /* types.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = types.yml; sourceTree = "<group>"; };
 		8280560422D4C35D0053DD85 /* FileManagerStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManagerStub.swift; sourceTree = "<group>"; };
 		8280560722D4C7450053DD85 /* YamlFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YamlFinderTests.swift; sourceTree = "<group>"; };
 		8280560A22D4CB250053DD85 /* SaneNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaneNotifications.swift; sourceTree = "<group>"; };
@@ -119,6 +113,12 @@
 		8280561122D51B550053DD85 /* NodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeTests.swift; sourceTree = "<group>"; };
 		8281095222C159BF00165A35 /* ValueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueViewController.swift; sourceTree = "<group>"; };
 		8281095422C15F7F00165A35 /* ValueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueCell.swift; sourceTree = "<group>"; };
+		8290355F22DBAB6700EA659A /* deviant_ok */ = {isa = PBXFileReference; lastKnownFileType = folder; path = deviant_ok; sourceTree = "<group>"; };
+		8290356022DBAB6700EA659A /* types */ = {isa = PBXFileReference; lastKnownFileType = folder; path = types; sourceTree = "<group>"; };
+		8290356122DBAB6700EA659A /* nested */ = {isa = PBXFileReference; lastKnownFileType = folder; path = nested; sourceTree = "<group>"; };
+		8290356222DBAB6700EA659A /* filename_mismatch */ = {isa = PBXFileReference; lastKnownFileType = folder; path = filename_mismatch; sourceTree = "<group>"; };
+		8290356322DBAB6700EA659A /* simple */ = {isa = PBXFileReference; lastKnownFileType = folder; path = simple; sourceTree = "<group>"; };
+		8290356922DBB32A00EA659A /* deviant_bad */ = {isa = PBXFileReference; lastKnownFileType = folder; path = deviant_bad; sourceTree = "<group>"; };
 		829ACFB622CA84BB00F64289 /* YamlKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YamlKey.swift; sourceTree = "<group>"; };
 		82ABEFCB22D09866005801FE /* icon.svg */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = icon.svg; sourceTree = "<group>"; };
 		82ABEFCC22D09866005801FE /* icon.xcf */ = {isa = PBXFileReference; lastKnownFileType = file; path = icon.xcf; sourceTree = "<group>"; };
@@ -297,12 +297,12 @@
 		828055EE22D288700053DD85 /* TestData */ = {
 			isa = PBXGroup;
 			children = (
-				828055FA22D3CCE20053DD85 /* nested_de.yml */,
-				828055FC22D3CD100053DD85 /* nested_en.yml */,
-				828055F022D288B60053DD85 /* simple_de.yml */,
-				828055EF22D288B60053DD85 /* simple_en.yml */,
-				828055FE22D3CE120053DD85 /* types.yml */,
-				828055F322D3C16E0053DD85 /* wrong_filename.yml */,
+				8290356922DBB32A00EA659A /* deviant_bad */,
+				8290355F22DBAB6700EA659A /* deviant_ok */,
+				8290356222DBAB6700EA659A /* filename_mismatch */,
+				8290356122DBAB6700EA659A /* nested */,
+				8290356322DBAB6700EA659A /* simple */,
+				8290356022DBAB6700EA659A /* types */,
 			);
 			path = TestData;
 			sourceTree = "<group>";
@@ -430,12 +430,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				828055FB22D3CCE20053DD85 /* nested_de.yml in Resources */,
-				828055FF22D3CE120053DD85 /* types.yml in Resources */,
-				828055FD22D3CD100053DD85 /* nested_en.yml in Resources */,
-				828055F422D3C16E0053DD85 /* wrong_filename.yml in Resources */,
-				828055F122D288B60053DD85 /* simple_en.yml in Resources */,
-				828055F222D288B60053DD85 /* simple_de.yml in Resources */,
+				8290356A22DBB32B00EA659A /* deviant_bad in Resources */,
+				8290356822DBAB6700EA659A /* simple in Resources */,
+				8290356622DBAB6700EA659A /* nested in Resources */,
+				8290356522DBAB6700EA659A /* types in Resources */,
+				8290356422DBAB6700EA659A /* deviant_ok in Resources */,
+				8290356722DBAB6700EA659A /* filename_mismatch in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

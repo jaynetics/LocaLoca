@@ -34,7 +34,7 @@ class YamlSaver: SaneNotifications {
     private class func insert(_ node: Node, into dict: inout [String: Any], locale: String) {
         if node.isLeaf {
             dict[node.ownKey] = node.translations?[locale] ?? ""
-        } else if node.isSequenceContainer {
+        } else if node.type == .sequence {
             // turn into array
             dict[node.ownKey] = node.children.map({ $0.translations?[locale] ?? "" })
         } else {

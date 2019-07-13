@@ -46,5 +46,6 @@ yarn-error.log
 /tmp
 !/tmp/.keep
 tags
+TODO.md
 .dockerignore
 gospace

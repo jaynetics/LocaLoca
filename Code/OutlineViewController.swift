@@ -152,58 +152,19 @@ NSUserInterfaceValidations { // To enable/disable menu items for the outline vie
                 Warning.show("\(url) contains invalid or duplicate locale `\(locale)`")
             }
         }
-        self.populateFromDict(result.dict)
-    }
-    
-    private func clearData() {
-        contents.removeAll()
-        locales.removeAll()
-    }
-    
-    private func populateFromDict(_ dict: [String: Any]) {
-        // disable auto-select while populating
+        
         treeController.selectsInsertedObjects = false
-        outlineView.isHidden = true
-
-        addNodes(dict, indexPath: IndexPath(index: contents.count))
-        treeController.setSelectionIndexPath(nil)
-
+        contents = result.nodes
         treeController.selectsInsertedObjects = true
-        outlineView.isHidden = false
-
+        
         post(Notifications.workDone)
         NSLog("adding nodes done")
     }
-
-    private func addNodes(_ dict: [String: Any], indexPath: IndexPath, keyPath: [String] = []) {
-        for key in dict.keys.sorted(by: { $0 > $1 }) {
-            guard let subdict = dict[key] as? [String: Any] else {
-                Warning.show("INVALID STRUCTURE:\n\n\(dict)")
-                return
-            }
-            let nodeKeyPath = keyPath + [key]
-            let node = Node(fullKey: nodeKeyPath.joined(separator: "."))
-            if subdict.values.first is String {
-                addLeafNode(node, translations: subdict as? [String: String], at: indexPath)
-            }
-            else {
-                addBranchNode(node, children: subdict, at: indexPath, keyPath: nodeKeyPath)
-            }
-        }
-    }
     
-    private func addLeafNode(_ node: Node, translations: [String: String]?, at indexPath: IndexPath) {
-        node.type = .document
-        node.translations = translations
-        treeController.insert(node, atArrangedObjectIndexPath: indexPath)
-    }
-    
-    private func addBranchNode(_ node: Node, children: [String: Any], at indexPath: IndexPath, keyPath: [String]) {
-        node.type = .container
-        node.isSequenceContainer = children.keys.contains("[0000]")
-        treeController.insert(node, atArrangedObjectIndexPath: indexPath)
-        let pathIntoNewNode = indexPath.appending(0)
-        addNodes(children, indexPath: pathIntoNewNode, keyPath: keyPath)
+    private func clearData() {
+        treeController.setSelectionIndexPath(nil)
+        contents.removeAll()
+        locales.removeAll()
     }
     
     // MARK: Removal and Addition

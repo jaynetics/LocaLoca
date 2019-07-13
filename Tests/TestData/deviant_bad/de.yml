@@ -1,0 +1,8 @@
+de:
+  foo: a
+  bar:
+    qux: b
+  qux:
+    - c
+    - d
+  ok: ok

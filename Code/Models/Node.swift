@@ -7,12 +7,12 @@ import Cocoa
 enum NodeType: Int, Codable {
     case container
     case document
+    case sequence
     case unknown
 }
 
 class Node: NSObject, Codable, SaneNotifications {
     var type: NodeType = .unknown
-    var isSequenceContainer = false
     var fullKey: String = "" {
         didSet {
             self.ownKey = "\(fullKey.split(separator: ".").last!)"
@@ -71,9 +71,9 @@ extension Node {
 
     var icon: NSImage {
         var osType: Int
-        if      isLeaf              { osType = kGenericDocumentIcon }
-        else if isSequenceContainer { osType = kGenericStationeryIcon }
-        else                        { osType = kGenericFolderIcon }
+        if      isLeaf            { osType = kGenericDocumentIcon }
+        else if type == .sequence { osType = kGenericStationeryIcon }
+        else                      { osType = kGenericFolderIcon }
 
         let iconType = NSFileTypeForHFSTypeCode(OSType(osType))
         return NSWorkspace.shared.icon(forFileType: iconType!)

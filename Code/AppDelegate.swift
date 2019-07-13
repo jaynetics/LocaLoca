@@ -29,7 +29,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, SaneNotifications {
     func openDirUrl(_ dirUrl: URL) {
         let result = YamlFinder.openUrl(dirUrl)
         if result.success {
-            post(Notifications.save, object: result)
+            post(Notifications.yamlsFound, object: result)
             hasChangesToSave = false
             saveAtMenuItem.isEnabled = true
             RecentlyOpened.add(dirUrl)
