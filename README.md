@@ -4,6 +4,7 @@
 - structural editing
 - ui tests
 - git integration?
+- publish as homebrew package
 
 ## Done
 - reading and writing of groups of yml files
